@@ -4,3 +4,51 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+:root.theme-dark {
+	--main-font-weight: 'wght' 465;
+	--accent-font-weight: 'wght' 785;
+	--bg-color: #000;
+	--accent-color: #00cc14;
+	--hover-color: #00cc14;
+	--button-svg-color: #00cc14;
+	--img-filter-shadow: drop-shadow(4px 6px 9px #00cc14);
+	--bg-image: repeating-linear-gradient(90deg, #000 0 2px, transparent 2px 4px),
+		repeating-linear-gradient(180deg, #000 0 2px, transparent 2px 4px),
+		repeating-linear-gradient(#007f0c 0.01%, #004306);
+}
+
+:root.theme-light {
+	--main-font-weight: 'wght' 400;
+	--accent-font-weight: 'wght' 700;
+	--bg-color: #fff;
+	--accent-color: #000;
+	--hover-color: #fff;
+	--button-svg-color: #fff;
+	--img-filter-shadow: drop-shadow(4px 6px 9px black);
+	--bg-image: repeating-linear-gradient(
+			90deg,
+			#d3d3d3 0 2px,
+			transparent 2px 4px
+		),
+		repeating-linear-gradient(180deg, #d3d3d3 0 2px, transparent 2px 4px),
+		repeating-linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--main-font-weight: 'wght' 465;
+		--accent-font-weight: 'wght' 785;
+		--bg-color: #000;
+		--accent-color: #00cc14;
+		--hover-color: #00cc14;
+		--button-svg-color: #00cc14;
+		--img-filter-shadow: drop-shadow(4px 6px 9px #00cc14);
+		--bg-image: repeating-linear-gradient(
+				90deg,
+				#000 0 2px,
+				transparent 2px 4px
+			),
+			repeating-linear-gradient(180deg, #000 0 2px, transparent 2px 4px),
+			repeating-linear-gradient(#007f0c 0.01%, #004306);
+	}
+}
