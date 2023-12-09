@@ -631,19 +631,23 @@
           aria-controls="section-save__dialog"
           class="section-save__button button"
         >
-          <svg viewBox="0 0 21 21" class="section-save__button-svg">
-            <use href="./svg/floppy(sprite).svg#floppy" class="floppy"></use>
-          </svg>
+          
+        <svg
+          class="floppy"
+          viewBox="0 0 40 40"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          style="width: 21px; height: 21px;">
+          <use href="./svg/floppy.svg#floppy" />
+        </svg>
+        <!--не понимаю, почему в светлой теме тут не отображается значок-->
           <span class="button__text">Сохранить на память</span>
         </button>
+
         <dialog class="section-save__dialog" id="section-save__dialog">
           <div class="section-save__dialog-text-container">
-            <svg
-              viewBox="0 0 21 21"
-              class="section-save__dialog-button-svg"
-              aria-hidden="true"
-            >
-              <use href="./svg/floppy(sprite).svg#floppy" class="floppy"></use>
+            <svg viewBox="0 0 40 40" class="dialog__image" style="width: 39px; height: 39px;">
+              <use href="svg/floppy.svg#floppy"/>
             </svg>
             <p class="section-save__dialog-text card__text">
               Вставьте дискету, чтобы продолжить
