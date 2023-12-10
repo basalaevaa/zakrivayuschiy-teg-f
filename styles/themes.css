@@ -11,6 +11,7 @@
 	--accent-color: #00cc14;
 	--hover-color: #00cc14;
 	--button-svg-color: #00cc14;
+	--color_button: #00cc14;
 	--img-filter-shadow: drop-shadow(4px 6px 9px #00cc14);
 	--bg-image: repeating-linear-gradient(90deg, #000 0 2px, transparent 2px 4px),
 		repeating-linear-gradient(180deg, #000 0 2px, transparent 2px 4px),
@@ -24,6 +25,7 @@
 	--accent-color: #000;
 	--hover-color: #fff;
 	--button-svg-color: #fff;
+	--color_button: #fff;
 	--img-filter-shadow: drop-shadow(4px 6px 9px black);
 	--bg-image: repeating-linear-gradient(
 			90deg,

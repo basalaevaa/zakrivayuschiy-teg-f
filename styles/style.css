@@ -360,12 +360,21 @@
   inline-size: 100%;
 }
 
+.svg_save_image {
+  width: 21px;
+  height: 21px;
+}
+
 .floppy {
   position: relative;
   block-size: 21px;
-  color: var(--accent-color, #fff);
+  color: var(--color_button);
   mix-blend-mode: difference;
   z-index: 1;
+}
+
+.dialog_image {
+  margin-top: 12px;
 }
 
 @media (width <= 375px) {
@@ -414,6 +423,12 @@
   .section-save__dialog-button-svg {
     block-size: 64px;
     inline-size: 95px;
+  }
+  .svg_save_image {
+    width: 28px;
+    height: 28px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
